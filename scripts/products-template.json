@@ -1,0 +1,89 @@
+{
+  "_comment": "Blue Nova product import template. Remove this comment before importing.",
+  "_instructions": [
+    "1. Copy this file and rename it (e.g. my-products.json)",
+    "2. Fill in your products following the structure below",
+    "3. Run: npx tsx scripts/import-products.ts my-products.json --dry-run",
+    "4. If validation passes, run without --dry-run to import",
+    "---",
+    "category: must be exactly one of: handbags | shoes | clothes | sunglasses",
+    "price / compareAtPrice: Nigerian Naira (₦), whole numbers only",
+    "hex: exactly 6 hex digits with leading #, e.g. #1A2B3C",
+    "imageUrls: direct links to images (Unsplash, your CDN, etc.)",
+    "sizes: use standard labels — XS S M L XL 2XL  or  36 37 38 39 40 41",
+    "isFeatured: set true for up to 4 products to show on the homepage"
+  ],
+  "products": [
+    {
+      "name": "The Eko Bucket Bag",
+      "category": "handbags",
+      "price": 72000,
+      "compareAtPrice": 90000,
+      "description": "Relaxed luxury in vegetable-tanned leather. The Eko Bucket Bag cinches at the drawstring for a silhouette that moves with you — from morning meetings to evening outings.",
+      "isFeatured": true,
+      "stock": 10,
+      "colors": [
+        { "name": "Caramel",      "hex": "#C4956A" },
+        { "name": "Forest Green", "hex": "#2D5A3D" }
+      ],
+      "imageUrls": [
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800"
+      ],
+      "materials": "Vegetable-tanned leather, canvas lining, antique brass hardware",
+      "careInstructions": "Wipe clean with a dry cloth. Condition every 3 months."
+    },
+    {
+      "name": "The Calabar Mule",
+      "category": "shoes",
+      "price": 48000,
+      "description": "A slip-on mule in buttery suede with a sculptured 5cm heel. Pairs with everything from tailored trousers to flowing dresses.",
+      "isFeatured": false,
+      "stock": 18,
+      "sizes": ["36", "37", "38", "39", "40"],
+      "colors": [
+        { "name": "Camel",  "hex": "#C19A6B" },
+        { "name": "Cognac", "hex": "#8B5E3C" }
+      ],
+      "imageUrls": [
+        "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=800"
+      ],
+      "materials": "Genuine suede upper, leather insole, rubber outsole",
+      "careInstructions": "Protect with suede spray before first wear. Brush with a suede brush to restore nap."
+    },
+    {
+      "name": "The Lekki Linen Blazer",
+      "category": "clothes",
+      "price": 95000,
+      "description": "Structure meets breathability. Cut in 100% Italian linen, this single-button blazer drapes beautifully in Lagos heat while maintaining a sharp, professional silhouette.",
+      "isFeatured": true,
+      "stock": 8,
+      "sizes": ["XS", "S", "M", "L", "XL"],
+      "colors": [
+        { "name": "Champagne", "hex": "#F7E7CE" },
+        { "name": "Charcoal",  "hex": "#36454F" }
+      ],
+      "imageUrls": [
+        "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800"
+      ],
+      "materials": "100% Italian linen, fully lined in viscose",
+      "careInstructions": "Dry clean recommended. If hand washing, use cold water and lay flat to dry."
+    },
+    {
+      "name": "The Benin Shield Sunglasses",
+      "category": "sunglasses",
+      "price": 35000,
+      "description": "Inspired by the iconic bronzework of Benin City, the Benin Shield features an oversized shield lens in amber or smoke, cut from a single piece of optical-grade polycarbonate.",
+      "isFeatured": false,
+      "stock": 20,
+      "colors": [
+        { "name": "Amber Smoke", "hex": "#B87333" },
+        { "name": "Jet Black",   "hex": "#1A1A1A" }
+      ],
+      "imageUrls": [
+        "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=800"
+      ],
+      "materials": "Injected polycarbonate frame, UV400 polycarbonate lens, titanium hinges",
+      "careInstructions": "Clean lenses with the microfibre pouch. Avoid leaving in direct sunlight."
+    }
+  ]
+}

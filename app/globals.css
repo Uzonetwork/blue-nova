@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --brand-blue: #0a1172;
+    --brand-gold: #c9a84c;
+    --brand-white: #ffffff;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-body text-brand-black bg-white;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+
+  * {
+    @apply border-brand-gray-200;
+  }
+
+  ::selection {
+    background-color: #0a1172;
+    color: #ffffff;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-8 py-3 bg-brand-blue text-white font-body text-sm tracking-widest uppercase transition-all duration-300 ease-luxury hover:bg-brand-gold hover:text-white;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-8 py-3 border border-brand-blue text-brand-blue font-body text-sm tracking-widest uppercase transition-all duration-300 ease-luxury hover:bg-brand-blue hover:text-white;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center justify-center px-8 py-3 bg-brand-gold text-white font-body text-sm tracking-widest uppercase transition-all duration-300 ease-luxury hover:bg-brand-gold-dark;
+  }
+
+  .section-heading {
+    @apply font-heading text-3xl md:text-4xl lg:text-5xl text-brand-blue leading-tight;
+  }
+
+  .section-subheading {
+    @apply font-body text-xs tracking-ultra-wide uppercase text-brand-gold;
+  }
+
+  .container-luxury {
+    @apply max-w-8xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .product-card {
+    @apply relative overflow-hidden bg-brand-gray-50 cursor-pointer;
+  }
+
+  .gold-divider {
+    @apply w-12 h-px bg-brand-gold mx-auto;
+  }
+
+  .nav-link {
+    @apply font-body text-xs tracking-widest uppercase text-brand-gray-700 hover:text-brand-gold transition-colors duration-200;
+  }
+
+  .input-luxury {
+    @apply w-full border-0 border-b border-brand-gray-300 bg-transparent px-0 py-2 font-body text-sm text-brand-black placeholder-brand-gray-400 focus:border-brand-blue focus:outline-none focus:ring-0 transition-colors duration-200;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .ease-luxury {
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+}

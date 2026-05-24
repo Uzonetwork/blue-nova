@@ -1,0 +1,43 @@
+{
+  "name": "blue-nova",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "seed": "npx tsx scripts/seed-products.ts",
+    "import-products": "npx tsx scripts/import-products.ts"
+  },
+  "dependencies": {
+    "@sanity/image-url": "^1.2.0",
+    "@sanity/vision": "^3.99.0",
+    "@stripe/react-stripe-js": "^6.4.0",
+    "@stripe/stripe-js": "^9.6.0",
+    "@supabase/ssr": "^0.10.3",
+    "@supabase/supabase-js": "^2.106.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.16.0",
+    "next": "14.2.35",
+    "next-sanity": "^9.12.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-is": "^19.2.6",
+    "sanity": "^3.99.0",
+    "stripe": "^22.1.1",
+    "styled-components": "^6.4.2",
+    "tailwind-merge": "^3.6.0",
+    "zustand": "^5.0.13"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.35",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
