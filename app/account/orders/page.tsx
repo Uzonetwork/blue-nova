@@ -47,7 +47,7 @@ export default async function OrdersPage() {
                     <p className="font-body text-xs tracking-widest uppercase text-brand-gold mb-1">
                       Order #{order.id.slice(0, 8).toUpperCase()}
                     </p>
-                    <p className="font-heading text-lg text-brand-blue">${order.total}</p>
+                    <p className="font-heading text-lg text-brand-blue">${order.total_amount}</p>
                   </div>
                   <span className="font-body text-xs tracking-widest uppercase text-brand-gray-500 border border-brand-gray-200 px-3 py-1">
                     {order.status}
